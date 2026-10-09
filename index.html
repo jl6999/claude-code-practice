@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Setting Up Claude Code</title>
+  <meta name="description" content="What I learned setting up Claude Code at Opt Digital.">
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --card: #ffffff;
+      --text: #1d1d1f;
+      --muted: #5f6368;
+      --accent: #c2410c;
+      --border: #e3e3e0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141414;
+        --card: #1e1e1e;
+        --text: #ececec;
+        --muted: #a0a0a0;
+        --accent: #fb923c;
+        --border: #333333;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 16px 64px;
+    }
+
+    header { margin-bottom: 32px; }
+    header .eyebrow {
+      margin: 0;
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 4px 0 0;
+      font-size: clamp(1.9rem, 6vw, 2.6rem);
+      line-height: 1.15;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.25rem;
+    }
+    h2 .num {
+      color: var(--accent);
+      margin-right: 6px;
+    }
+    p { margin: 0; }
+    .muted { color: var(--muted); }
+
+    .role {
+      font-size: 1.15rem;
+      font-weight: 600;
+    }
+
+    ul.tools {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    ul.tools li {
+      padding: 10px 0;
+      border-top: 1px solid var(--border);
+    }
+    ul.tools li:first-child { border-top: 0; padding-top: 0; }
+    ul.tools strong { display: block; }
+
+    ol { margin: 0; padding-left: 1.4em; }
+    ol li + li { margin-top: 8px; }
+
+    .placeholder {
+      border: 2px dashed var(--accent);
+      border-radius: 8px;
+      padding: 32px 16px;
+      text-align: center;
+      color: var(--muted);
+    }
+    .placeholder strong {
+      display: block;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+
+    img { max-width: 100%; height: auto; border-radius: 8px; }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">My first week with Claude Code</p>
+      <h1>What I learned setting up Claude Code</h1>
+    </header>
+
+    <section id="who">
+      <h2><span class="num">1.</span>Who I am</h2>
+      <p class="role">Jeiel</p>
+      <p class="muted">Web Developer at Opt Digital</p>
+    </section>
+
+    <section id="setup">
+      <h2><span class="num">2.</span>What I set up</h2>
+      <ul class="tools">
+        <li><strong>VS Code</strong> <span class="muted">The code editor where I write and edit files.</span></li>
+        <li><strong>Claude Code</strong> <span class="muted">An AI assistant that works inside VS Code and the terminal to plan, write and check code.</span></li>
+        <li><strong>Git</strong> <span class="muted">Tracks every change to the files so work can be saved, compared and undone.</span></li>
+        <li><strong>GitHub</strong> <span class="muted">Stores the repo online and is where pull requests are reviewed and merged.</span></li>
+        <li><strong>Vercel</strong> <span class="muted">Hosts this page and publishes it automatically when <code>main</code> changes.</span></li>
+      </ul>
+    </section>
+
+    <section id="learned">
+      <h2><span class="num">3.</span>Three things I learned</h2>
+      <ol>
+        <li>I've learned how to use and add skills on claude.</li>
+        <li>also use a md file and env file and what they are for.</li>
+        <li>and make claude auto learn from the errors and fix them based on the rules written on md file.</li>
+      </ol>
+    </section>
+
+    <section id="workflow">
+      <h2><span class="num">4.</span>How we work</h2>
+      <p>Create a branch, use claude to edit and build, run a test, name a commit, push, create a pr, Will reviews and merge, and deployment.</p>
+    </section>
+
+    <section id="proof">
+      <h2><span class="num">5.</span>Proof</h2>
+      <!-- PLACEHOLDER: replace this box with the real screenshot in the follow-up pull request. -->
+      <div class="placeholder">
+        <strong>Screenshot coming soon</strong>
+        A merged pull request will be added here in a follow-up pull request.
+      </div>
+      <!--
+      <img src="images/merged-pr.png" alt="Screenshot of a merged pull request on GitHub">
+      -->
+    </section>
+
+    <footer>
+      <p>Built with plain HTML and CSS.</p>
+    </footer>
+  </main>
+</body>
+</html>
