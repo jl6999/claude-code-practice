@@ -95,20 +95,15 @@
     ol { margin: 0; padding-left: 1.4em; }
     ol li + li { margin-top: 8px; }
 
-    .placeholder {
-      border: 2px dashed var(--accent);
-      border-radius: 8px;
-      padding: 32px 16px;
-      text-align: center;
+    figure { margin: 0; }
+    figcaption {
+      margin-top: 8px;
+      font-size: 0.9rem;
       color: var(--muted);
-    }
-    .placeholder strong {
-      display: block;
-      color: var(--accent);
-      margin-bottom: 4px;
     }
 
     img { max-width: 100%; height: auto; border-radius: 8px; }
+    figure img { display: block; border: 1px solid var(--border); }
 
     footer {
       text-align: center;
@@ -157,14 +152,10 @@
 
     <section id="proof">
       <h2><span class="num">5.</span>Proof</h2>
-      <!-- PLACEHOLDER: replace this box with the real screenshot in the follow-up pull request. -->
-      <div class="placeholder">
-        <strong>Screenshot coming soon</strong>
-        A merged pull request will be added here in a follow-up pull request.
-      </div>
-      <!--
-      <img src="images/merged-pr.png" alt="Screenshot of a merged pull request on GitHub">
-      -->
+      <figure>
+        <img src="images/merged-pr.png" alt="Screenshot of a merged pull request on GitHub">
+        <figcaption>My first pull request, reviewed and merged into main.</figcaption>
+      </figure>
     </section>
 
     <footer>
